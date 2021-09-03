@@ -1,0 +1,37 @@
+.homescreen {
+	max-width: 1300px;
+	margin: 1rem auto;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.homescreen_title {
+	font-size: 1.5rem;
+	color: #171717;
+	margin-bottom: 1rem;
+	margin-left: 198px;
+}
+
+.homescreen_products {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin-left: 160px;
+}
+
+@media (max-width: 1232px) {
+	.homescreen_products {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 950px) {
+	.homescreen_products {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 630px) {
+	.homescreen_products {
+		grid-template-columns: 1fr;
+	}
+}
